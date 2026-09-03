@@ -6,6 +6,8 @@ import {
   GovernmentServiceRecord
 } from "../types/domain";
 
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://mugenzi-backend-f6ij.onrender.com/';
+
 export class AIService {
   private static baseUrl = "/api/ai";
   private static ragUrl = "/api/rag";
@@ -271,4 +273,18 @@ export class AIService {
       return false;
     }
   }
+}
+
+export async function queryMugenziRag(payload: any) {
+  const response = await fetch(`${API_BASE_URL}/api/rag`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  });
+  
+  if (!response.ok) {
+    throw new Error('Failed to reach Mugenzi RAG backend');
+  }
+  
+  return response.json();
 }
