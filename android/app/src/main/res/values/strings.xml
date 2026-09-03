@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Mugenzi AI Companion</string>
+    <string name="title_activity_main">Mugenzi AI Companion</string>
+    <string name="package_name">com.citizen.app</string>
+    <string name="custom_url_scheme">com.citizen.app</string>
+</resources>

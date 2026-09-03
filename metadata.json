@@ -1,0 +1,6 @@
+{
+  "name": "Mugenzi",
+  "description": "AI-powered Digital Citizen Companion for Rwanda — guiding citizens through government services, life events, journey timelines, and document validation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
